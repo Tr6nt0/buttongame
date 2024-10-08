@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Button Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login">
+        <h1>Multiplayer Button Game</h1>
+        <input id="username" type="text" placeholder="Enter username">
+        <button onclick="login()">Start New Game</button>
+    </div>
+    <div id="game" style="display: none;">
+        <h1>Multiplayer Button Game</h1>
+        <div class="button-container">
+            <button id="redButton" class="game-button" onclick="pressButton('red')">🔴</button>
+            <button id="blueButton" class="game-button" onclick="pressButton('blue')">🔵</button>
+            <button id="yellowButton" class="game-button" onclick="pressButton('yellow')">🟡</button>
+            <button id="purpleButton" class="game-button" onclick="pressButton('purple')">🟣</button>
+            <button id="whiteButton" class="game-button" onclick="pressButton('white')">⚪</button>
+        </div>
+        <div id="currentButton">Current Button: None</div>
+        <div id="earnings">Earnings: $0.00</div>
+        <div class="info-container">
+            <div class="info-box">
+                <h2>Leaderboard</h2>
+                <div id="leaderboard"></div>
+            </div>
+            <div class="info-box">
+                <h2>Active Users</h2>
+                <div id="activeUsers"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
