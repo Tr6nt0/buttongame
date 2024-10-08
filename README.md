@@ -32,8 +32,8 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/multiplayer-button-game.git
-   ```
+git clone https://github.com/Tr6nt0/multiplayer-button-game.git   ```
+
 
 2. Navigate to the project directory:
    ```
